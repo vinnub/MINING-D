@@ -1,34 +1,21 @@
-#MINING-D
+# MINING-D
 
 MINING-D is a tool (written in Python 3.6.5) for inference of D genes using Rep-Seq data from diverse species. 
+It takes as input a file with consensus CDR3s from an immunosequencing dataset (see paper) and writes the inferred D genes in the output file in the fasta format. 
 
-Usage with default parameters
+There are two ways of running MINING-D. 
 
-~~~ shell
-$ python MINING_D.py -i input_CDR_file -o output_file
-~~~
-
-**Dependencies**
-
-- Biopython 
-- Networkx
-- Joblib
-- NumPy
-- SciPy
-
-
-To check all options for MINING-D, use
+   - **From command line** - To use default MINING-D parameters, use 
+  
+    ~~~shell
+$ python MINING_D.py -i <input_CDR_file> -o <output_file> 
+~~~  
+    To check all options for MINING-D, use `python MINING_D.py --help`. You should see something like this
  
-~~~ shell
-$ python MINING_D.py --help
-~~~
-
-You should see something like this
-
-~~~ shell
+    ~~~ shell
 Usage: MINING_D.py [OPTIONS]
 
-Options:
+    Options:
   -i, --input_cdr_file TEXT  Input file with consensus CDR3s  [required]
   -o, --output_file TEXT     Output file to store inferred D genes  [required]
   -k INTEGER                 Length of starting k-mers  [default: 10]
@@ -43,3 +30,14 @@ Options:
                              [default: 2]
   --help                     Show this message and exit.
 ~~~
+ 
+- **Jupyter Notebook** - If you would like to run MINING-D in an interactive environment, there is a Jupyter notebook named "*interactive\_MINING\_D.ipynb*" in the repo. Please specify the input file, output file, and other parameters at the top of the notebook like shown in the example. 
+
+
+**Dependencies**
+
+- Biopython 
+- Networkx
+- Joblib
+- NumPy
+- SciPy
