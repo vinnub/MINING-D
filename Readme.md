@@ -9,12 +9,13 @@ There are two ways of running MINING-D.
 - **From command line** - To use default MINING-D parameters, use 
 
     
-    ~~~shell 
+    ``` 
     $ python MINING_D.py -i <input_CDR_file> -o <output_file> 
-    ~~~ 
+    ``` 
+    
     To check all available options, use `python MINING-D.py --help`. 
 
-    ```shell
+    ```
     $ python MINING_D.py --help 
     Usage: MINING_D.py [OPTIONS]
 
