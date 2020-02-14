@@ -2,7 +2,7 @@
 # MINING-D
 
 MINING-D is a tool (written in Python 3.6.5) for inference of D genes using Rep-Seq data from diverse species. 
-It takes as input a file with consensus CDR3s from an immunosequencing dataset (see paper) and writes the inferred D genes in the output file in the fasta format. 
+It takes as input a fasta file with consensus CDR3s from an immunosequencing dataset (see paper) and writes the inferred D genes in the output file in the fasta format. 
 
 There are two ways of running MINING-D. 
 
