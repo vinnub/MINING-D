@@ -37,8 +37,9 @@ There are two ways of running MINING-D.
 **Dependencies**
 
 - Biopython 
-- Networkx
+- Networkx<2.4
 - Joblib
 - NumPy
 - SciPy
+- [click](https://palletsprojects.com/p/click/)
 
